@@ -25,7 +25,7 @@ public sealed class TikTokOpenApiClientUtil : ITikTokOpenApiClientUtil
         {
             HttpClient httpClient = await httpClientUtil.Get(token).NoSync();
 
-            var apiKey = configuration.GetValueStrict<string>("TikTok:AccessToken");
+            var apiKey = configuration.GetStringStrict("TikTok:AccessToken");
             string authHeaderName = configuration["TikTok:AuthHeaderName"] ?? "Authorization";
             string authHeaderValueTemplate = configuration["TikTok:AuthHeaderValueTemplate"] ?? "Bearer {token}";
             string authHeaderValue = authHeaderValueTemplate.Replace("{token}", apiKey, StringComparison.Ordinal);
