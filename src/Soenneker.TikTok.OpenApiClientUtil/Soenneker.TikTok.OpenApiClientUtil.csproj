@@ -46,7 +46,7 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Kiota.GenericAuthenticationProvider" Version="11.0.59" />
-        <PackageReference Include="Soenneker.TikTok.HttpClients" Version="11.0.36" />
+        <PackageReference Include="Soenneker.TikTok.HttpClients" Version="11.0.37" />
         <PackageReference Include="Soenneker.TikTok.OpenApiClient" Version="11.0.43" />
     </ItemGroup>
 </Project>
